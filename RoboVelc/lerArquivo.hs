@@ -1,7 +1,7 @@
 import System.IO
 import Control.Monad
 
-f :: [String] -> [Int]
+f :: [String] -> [Float]
 f = map read
 
 calc = do  
