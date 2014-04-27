@@ -1,4 +1,4 @@
-module ArquivosForex (cotacoes) where
+module ArquivosForex (stringFromFloat,obtemTipoGrafico, lerCotacoes, detectaQuantidadeCandle,cotacoes) where
 
 import System.IO
 --import Control.Monad
@@ -24,11 +24,11 @@ lerCotacoes = do
             listaDeCotacoes = stringFromFloat listaDePalavras
         return listaDeCotacoes
 
-lerCandle = do
+detectaQuantidadeCandle = do
     arquivoForex <- openFile "criterioEntrada.txt" ReadMode
     conteudo <- hGetContents arquivoForex
     let listaDePalavras = words conteudo
     let candle = truncate (read (last listaDePalavras) :: Float)
     return candle
 
-cotacoes = take ( unsafeLocalState lerCandle) (unsafeLocalState lerCotacoes)
+cotacoes = take ( unsafeLocalState detectaQuantidadeCandle) (unsafeLocalState lerCotacoes)

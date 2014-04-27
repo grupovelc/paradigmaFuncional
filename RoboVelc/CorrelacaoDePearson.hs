@@ -1,4 +1,4 @@
-module CorrelacaoDePearson(correlacaoDePearson)where
+module CorrelacaoDePearson(calculaMedia, correlacaoDePearson)where
 
 calculaMedia [] = 0
 calculaMedia (cabeca:calda) = sum (cabeca:calda) / fromIntegral(length (cabeca:calda))
