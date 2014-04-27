@@ -1,6 +1,5 @@
 module Fibonacci (verificaCotacaoListaFibonacci, encontrarFibonacciAnterior) where
 
-import ArquivosForex (detectaQuantidadeCandle)
 import Foreign.Marshal
 
 verificaCotacaoListaFibonacci candle=
