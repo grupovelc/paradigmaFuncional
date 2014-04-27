@@ -1,4 +1,4 @@
---module ArquivosForex (lerCotacoes, lerQuantidadeCandles) where
+module ArquivosForex (obtemTipoGrafico,lerCotacoes, lerCandle) where
 
 import System.IO
 --import Control.Monad
