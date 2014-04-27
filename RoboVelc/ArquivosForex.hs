@@ -1,4 +1,4 @@
-module ArquivosForex (obtemTipoGrafico,lerCotacoes, lerCandle) where
+module ArquivosForex (cotacoes) where
 
 import System.IO
 --import Control.Monad
@@ -17,7 +17,6 @@ obtemTipoGrafico = do
 
 lerCotacoes = do
         let grafico = (unsafeLocalState obtemTipoGrafico) ++ ".csv"
-        print grafico
         let listaDeCotacoes = []
         arquivoForex <- openFile grafico ReadMode
         conteudo <- hGetContents arquivoForex
@@ -32,3 +31,4 @@ lerCandle = do
     let candle = truncate (read (last listaDePalavras) :: Float)
     return candle
 
+cotacoes = take ( unsafeLocalState lerCandle) (unsafeLocalState lerCotacoes)

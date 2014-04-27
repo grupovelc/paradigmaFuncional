@@ -1,4 +1,4 @@
-module CorrelacaoDePearson(calculaMedia,vetorX,vetorY,covarianciaPearson,varianciaPearson,correlacaoDePearson)where
+module CorrelacaoDePearson(correlacaoDePearson)where
 
 calculaMedia [] = 0
 calculaMedia (cabeca:calda) = sum (cabeca:calda) / fromIntegral(length (cabeca:calda))
@@ -30,4 +30,3 @@ correlacaoDePearson (cabeca:calda) =  do
 		let raizVarianciaXY = sqrt (varianciaXY)
 
 		return (covariancia / raizVarianciaXY)
-

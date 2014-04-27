@@ -1,10 +1,5 @@
-import System.IO
-import Control.Monad
+import ArquivosForex
 import CorrelacaoDePearson
 
-stringFromFloat :: [String] -> [Float]
-stringFromFloat = map read
-
-main = do
-
+main = correlacaoDePearson cotacoes
 
