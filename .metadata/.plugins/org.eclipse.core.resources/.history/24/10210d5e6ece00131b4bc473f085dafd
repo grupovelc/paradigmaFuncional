@@ -1,0 +1,13 @@
+package metodosNumericos;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.util.*;
+import java.util.regex.Pattern;
+
+public class LeituraArquivo {
+	BufferedReader in = new BufferedReader(new FileReader("saidaMetodosNumericos.txt"));
+	String str = in.readLine();
+
+	
+}

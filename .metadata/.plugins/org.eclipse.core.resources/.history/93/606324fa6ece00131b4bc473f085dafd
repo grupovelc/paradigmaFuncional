@@ -1,0 +1,13 @@
+package metodosNumericos;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+
+
+public class LeituraArquivo {
+	
+	FileReader arq = new FileReader("saidaMetodosNumericos.txt"); 
+	BufferedReader lerArq = new BufferedReader(arq); 
+	String linha = lerArq.readLine(); // lê a primeira linha
+
+	

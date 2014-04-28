@@ -1,0 +1,19 @@
+package metodosNumericos;
+import java.util.*;
+
+public class LeituraArquivo {
+	
+	String nome;
+	Scanner scanner = new Scanner(new FileReader("arquivo.txt"))
+    .useDelimiter("\\||\\n");
+	
+	public LeituraArquivo(){
+		
+	}
+	
+	while (scanner.hasNext()) {
+		nome = scanner.next();
+		System.out.println(nome);
+	}
+
+}

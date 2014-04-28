@@ -1,0 +1,12 @@
+package metodosNumericos;
+import java.io.FileReader;
+import java.util.*;
+
+public class LeituraArquivo {
+	
+	String nome = "fd";
+	Scanner scanner = new Scanner(new FileReader("arquivo.txt"))
+	
+
+
+}

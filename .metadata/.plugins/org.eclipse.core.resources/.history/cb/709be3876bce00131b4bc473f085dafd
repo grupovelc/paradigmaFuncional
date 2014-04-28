@@ -1,0 +1,17 @@
+package metodosNumericos;
+import java.io.File;
+import java.io.FileReader;
+import java.util.*;
+
+public class LeituraArquivo {
+	
+	String arquivo = 
+			  new Scanner(new File("compras.txt"))
+			             .useDelimiter("\\Z").next();
+	
+	while (scanner.hasNext()) {
+		nome = scanner.next();
+		System.out.println(nome);
+	}
+
+}

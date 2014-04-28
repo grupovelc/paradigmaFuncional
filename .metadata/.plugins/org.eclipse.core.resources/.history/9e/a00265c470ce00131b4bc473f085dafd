@@ -1,0 +1,27 @@
+package metodosNumericos;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+
+
+public class LeituraArquivo {
+	
+	static String linha;
+	
+	public static void main(String[] args){
+		System.out.println(linha);
+	}
+	
+	public String leituraArquivoHaskell() throws IOException{
+		
+		FileReader arq = new FileReader("saidaMetodosNumericos.txt"); 
+		BufferedReader lerArq = new BufferedReader(arq); 
+		linha = lerArq.readLine();
+		
+		return linha; 
+	}
+	
+}
+
+	

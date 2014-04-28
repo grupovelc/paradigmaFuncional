@@ -1,0 +1,40 @@
+package metodosNumericos;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.Scanner;
+
+
+public class LeituraArquivo {
+	
+	String nome;
+	
+	public static void main(String[] args) throws IOException{
+		System.out.println(leituraArquivoHaskell());
+		System.out.println(leituraArquivoJava());
+	}
+	
+	public static String leituraArquivoHaskell() throws IOException{
+		
+		Scanner scanner = new Scanner(new FileReader("saidaEmHaskell.txt"))
+        .useDelimiter("\\||\\n");
+		while (scanner.hasNext()) {
+			nome = scanner.next();
+		}
+		return nome;
+	}
+	
+	public static String leituraArquivoJava() throws IOException{
+		
+		Scanner scanner = new Scanner(new FileReader("saidaEmJava.txt"))
+        .useDelimiter("\\||\\n");
+		while (scanner.hasNext()) {
+			nome = scanner.next();
+		}
+		return nome;
+	}
+	
+}
+
+	

@@ -1,0 +1,19 @@
+package metodosNumericos;
+
+
+
+public class LeituraArquivoTest {
+	
+	private LeituraArquivo la;
+
+	@Before
+	public void setUp() throws Exception {
+		la = new LeituraArquivo();
+	}
+
+	@Test
+	public void test() {
+		assertEquals(1, 1);
+	}
+
+}

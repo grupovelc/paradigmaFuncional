@@ -1,0 +1,3 @@
+INDEX VERSION 1.126+/home/cleiton/github/paradigmaFuncional/.metadata/.plugins/org.eclipse.jdt.core
+2990159731.index
+845910618.index

@@ -1,0 +1,11 @@
+package metodosNumericos;
+import java.io.File;
+import java.io.FileReader;
+import java.util.*;
+import java.util.regex.Pattern;
+
+public class LeituraArquivo {
+	
+	Pattern arquivo = new Scanner(new File("saidaMetodosNumericos.txt")).delimiter();
+
+}

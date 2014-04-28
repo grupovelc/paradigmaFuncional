@@ -1,0 +1,24 @@
+package metodosNumericos;
+
+import static org.junit.Assert.*;
+
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+
+public class LeituraArquivoTest {
+	
+	private LeituraArquivo la;
+
+	@Before
+	public void setUp() throws Exception {
+		la = new LeituraArquivo();
+	}
+
+	@Test
+	public void test() {
+		assertEquals(1, 1);
+	}
+
+}

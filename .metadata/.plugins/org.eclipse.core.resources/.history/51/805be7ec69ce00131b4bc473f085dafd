@@ -1,0 +1,13 @@
+
+public class LeituraArquivo {
+	
+	String static nome;
+	Scanner scanner = new Scanner(new FileReader("arquivo.txt"))
+    .useDelimiter("\\||\\n");
+	
+	while (scanner.hasNext()) {
+		nome = scanner.next();
+		System.out.println(nome);
+	}
+
+}
